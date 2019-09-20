@@ -6,9 +6,9 @@ gameport.appendChild(renderer.view);
 var stage = new PIXI.Container();
 
 // ADD ASTEROIDS
-var asteroid_1 = new PIXI.Sprite(PIXI.Texture.from("/Sprites/Asteroid.png")),
-    asteroid_2 = new PIXI.Sprite(PIXI.Texture.from("/Sprites/Asteroid.png"))
-    asteroid_3 = new PIXI.Sprite(PIXI.Texture.from("/Sprites/Asteroid.png"))
+var asteroid_1 = new PIXI.Sprite(PIXI.Texture.from("Sprites/Asteroid.png")),
+    asteroid_2 = new PIXI.Sprite(PIXI.Texture.from("Sprites/Asteroid.png"))
+    asteroid_3 = new PIXI.Sprite(PIXI.Texture.from("Sprites/Asteroid.png"))
 
 stage.addChild(asteroid_1)
 stage.addChild(asteroid_2)
@@ -91,28 +91,58 @@ function keydownHandler(e)
     if (e.keyCode == 65) //A
     {
         puffball.position.x -= 10;
-        laser.position.x -= 10;
+        laser1.position.x -= 10;
+        laser2.position.x -= 10;
+        laser3.position.x -= 10;
     }
 
     if (e.keyCode == 68) //D
     {
         puffball.position.x += 10;
-        laser.position.x += 10;
+        laser1.position.x += 10;
+        laser2.position.x += 10;
+        laser3.position.x += 10;
     }
 
     if (e.keyCode == 87) // W
     {
-        createjs.Tween.get(laser).to({y: -1000}, 1500)
+        if(laser1.y == 445)
+        {
+            createjs.Tween.get(laser1).to({y: -550}, 1500);
+        }
+        else if(laser2.y == 445)
+        {
+            createjs.Tween.get(laser2).to({y: -550}, 1500);
+        }
+        else if(laser3.y == 445)
+        {
+            createjs.Tween.get(laser3).to({y: -550}, 1500);
+        }
         //laser.position.y -= 40;
     }
+
 }
 
 function animate()
 {
     requestAnimationFrame(animate);
-    // asteroid_1.rotation += .1
-    // asteroid_2.rotation += .1
-    // asteroid_3.rotation += .1
+    asteroid_1.rotation += .1
+    asteroid_2.rotation += .1
+    asteroid_3.rotation += .1
+
+    if(laser1.y == -550)
+    {
+        laser1.y = 445;
+    }
+    if(laser2.y == -550)
+    {
+        laser2.y = 445;
+    }
+    if(laser3.y == -550)
+    {
+        laser3.y = 445;
+    }
+    
     renderer.render(stage);
 }
 

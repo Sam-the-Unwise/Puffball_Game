@@ -1,6 +1,6 @@
 /*!
- * pixi.js - v5.1.1
- * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+ * pixi.js - v5.1.3
+ * Compiled Mon, 09 Sep 2019 04:51:53 UTC
  *
  * pixi.js is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
@@ -472,7 +472,7 @@ var PIXI = (function (exports) {
 
 	/*!
 	 * @pixi/polyfill - v5.1.0
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/polyfill is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -635,8 +635,8 @@ var PIXI = (function (exports) {
 	var isMobile_min_1 = isMobile_min.isMobile;
 
 	/*!
-	 * @pixi/settings - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/settings - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/settings is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -717,7 +717,7 @@ var PIXI = (function (exports) {
 	 * @example
 	 * // Use the native window resolution as the default resolution
 	 * // will support high-density displays when rendering
-	 * PIXI.settings.RESOLUTION = window.devicePixelRatio.
+	 * PIXI.settings.RESOLUTION = window.devicePixelRatio;
 	 *
 	 * // Disable interpolation when scaling, will make texture be pixelated
 	 * PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST;
@@ -3392,7 +3392,7 @@ var PIXI = (function (exports) {
 
 	/*!
 	 * @pixi/constants - v5.1.0
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/constants is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -3722,8 +3722,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/utils - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/utils - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/utils is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -3755,7 +3755,7 @@ var PIXI = (function (exports) {
 	settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT = true;
 
 	var saidHello = false;
-	var VERSION = '5.1.1';
+	var VERSION = '5.1.3';
 
 	/**
 	 * Skips the hello message of renderers that are created after this is run.
@@ -3788,7 +3788,7 @@ var PIXI = (function (exports) {
 	    if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
 	    {
 	        var args = [
-	            ("\n %c %c %c PixiJS " + VERSION + " - âœ° " + type + " âœ°  %c  %c  http://www.pixijs.com/  %c %c â™¥%câ™¥%câ™¥ \n\n"),
+	            ("\n %c %c %c PixiJS " + VERSION + " - ✰ " + type + " ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ \n\n"),
 	            'background: #ff66a5; padding:5px 0;',
 	            'background: #ff66a5; padding:5px 0;',
 	            'color: #ff66a5; background: #030307; padding:5px 0;',
@@ -4190,7 +4190,7 @@ var PIXI = (function (exports) {
 	/**
 	 * Rounds to next power of two.
 	 *
-	 * @function isPow2
+	 * @function nextPow2
 	 * @memberof PIXI.utils
 	 * @param {number} v input value
 	 * @return {number}
@@ -4715,7 +4715,7 @@ var PIXI = (function (exports) {
 
 	/*!
 	 * @pixi/math - v5.1.0
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/math is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -5617,7 +5617,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation | Direction |
 	     * |----------|-----------|
-	     * | 0Â°       | East      |
+	     * | 0°       | East      |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5626,7 +5626,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation | Direction |
 	     * |----------|-----------|
-	     * | 45Â°â†»     | Southeast |
+	     * | 45°↻     | Southeast |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5635,7 +5635,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation | Direction |
 	     * |----------|-----------|
-	     * | 90Â°â†»     | South     |
+	     * | 90°↻     | South     |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5644,7 +5644,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation | Direction |
 	     * |----------|-----------|
-	     * | 135Â°â†»    | Southwest |
+	     * | 135°↻    | Southwest |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5653,7 +5653,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation | Direction |
 	     * |----------|-----------|
-	     * | 180Â°     | West      |
+	     * | 180°     | West      |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5662,7 +5662,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation    | Direction    |
 	     * |-------------|--------------|
-	     * | -135Â°/225Â°â†» | Northwest    |
+	     * | -135°/225°↻ | Northwest    |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5671,7 +5671,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation    | Direction    |
 	     * |-------------|--------------|
-	     * | -90Â°/270Â°â†»  | North        |
+	     * | -90°/270°↻  | North        |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -5680,7 +5680,7 @@ var PIXI = (function (exports) {
 	    /**
 	     * | Rotation    | Direction    |
 	     * |-------------|--------------|
-	     * | -45Â°/315Â°â†»  | Northeast    |
+	     * | -45°/315°↻  | Northeast    |
 	     *
 	     * @constant {PIXI.GD8Symmetry}
 	     */
@@ -6811,8 +6811,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/display - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/display - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/display is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -8606,8 +8606,8 @@ var PIXI = (function (exports) {
 	Container.prototype.containerUpdateTransform = Container.prototype.updateTransform;
 
 	/*!
-	 * @pixi/accessibility - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/accessibility - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/accessibility is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9244,7 +9244,7 @@ var PIXI = (function (exports) {
 
 	/*!
 	 * @pixi/runner - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/runner is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9455,8 +9455,8 @@ var PIXI = (function (exports) {
 	Runner.prototype.run = Runner.prototype.emit;
 
 	/*!
-	 * @pixi/ticker - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/ticker - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/ticker is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -9732,7 +9732,7 @@ var PIXI = (function (exports) {
 	     * and is scaled with {@link PIXI.Ticker#speed}.
 	     * **Note:** The cap may be exceeded by scaling.
 	     * If the platform supports DOMHighResTimeStamp,
-	     * this value will have a precision of 1 Âµs.
+	     * this value will have a precision of 1 µs.
 	     * Defaults to target frame time
 	     *
 	     * @member {number}
@@ -9745,7 +9745,7 @@ var PIXI = (function (exports) {
 	     * Opposed to what the scalar {@link PIXI.Ticker#deltaTime}
 	     * is based, this value is neither capped nor scaled.
 	     * If the platform supports DOMHighResTimeStamp,
-	     * this value will have a precision of 1 Âµs.
+	     * this value will have a precision of 1 µs.
 	     * Defaults to target frame time
 	     *
 	     * @member {number}
@@ -9758,7 +9758,7 @@ var PIXI = (function (exports) {
 	     * This value is also reset internally outside of invoking
 	     * update, but only when a new animation frame is requested.
 	     * If the platform supports DOMHighResTimeStamp,
-	     * this value will have a precision of 1 Âµs.
+	     * this value will have a precision of 1 µs.
 	     *
 	     * @member {number}
 	     * @default -1
@@ -10407,8 +10407,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/core - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/core - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/core is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -10474,6 +10474,14 @@ var PIXI = (function (exports) {
 	     * @private
 	     */
 	    this.onUpdate = new Runner('update');
+
+	    /**
+	     * Handle internal errors, such as loading errors
+	     *
+	     * @member {Runner}
+	     * @private
+	     */
+	    this.onError = new Runner('onError', 1);
 	};
 
 	var prototypeAccessors$5 = { valid: { configurable: true },width: { configurable: true },height: { configurable: true } };
@@ -10487,6 +10495,7 @@ var PIXI = (function (exports) {
 	{
 	    this.onResize.add(baseTexture);
 	    this.onUpdate.add(baseTexture);
+	    this.onError.add(baseTexture);
 
 	    // Call a resize immediate if we already
 	    // have the width and height of the resource
@@ -10505,10 +10514,13 @@ var PIXI = (function (exports) {
 	{
 	    this.onResize.remove(baseTexture);
 	    this.onUpdate.remove(baseTexture);
+	    this.onError.remove(baseTexture);
 	};
 
 	/**
 	 * Trigger a resize event
+	 * @param {number} width X dimension
+	 * @param {number} height Y dimension
 	 */
 	Resource.prototype.resize = function resize (width, height)
 	{
@@ -10619,12 +10631,14 @@ var PIXI = (function (exports) {
 	{
 	    if (!this.destroyed)
 	    {
+	        this.destroyed = true;
+	        this.dispose();
+	        this.onError.removeAll();
+	        this.onError = null;
 	        this.onResize.removeAll();
 	        this.onResize = null;
 	        this.onUpdate.removeAll();
 	        this.onUpdate = null;
-	        this.destroyed = true;
-	        this.dispose();
 	    }
 	};
 
@@ -10764,6 +10778,16 @@ var PIXI = (function (exports) {
 
 	        BaseImageResource.call(this, source);
 
+	        // FireFox 68, and possibly other versions, seems like setting the HTMLImageElement#width and #height
+	        // to non-zero values before its loading completes if images are in a cache.
+	        // Because of this, need to set the `_width` and the `_height` to zero to avoid uploading incomplete images.
+	        // Please refer to the issue #5968 (https://github.com/pixijs/pixi.js/issues/5968).
+	        if (!source.complete && !!this._width && !!this._height)
+	        {
+	            this._width = 0;
+	            this._height = 0;
+	        }
+
 	        /**
 	         * URL of the image source
 	         * @member {string}
@@ -10878,6 +10902,7 @@ var PIXI = (function (exports) {
 	            else
 	            {
 	                source.onload = completed;
+	                source.onerror = function (event) { return this$1.onError.run(event); };
 	            }
 	        });
 
@@ -10988,6 +11013,9 @@ var PIXI = (function (exports) {
 	     */
 	    ImageResource.prototype.dispose = function dispose ()
 	    {
+	        this.source.onload = null;
+	        this.source.onerror = null;
+
 	        BaseImageResource.prototype.dispose.call(this);
 
 	        if (this.bitmap)
@@ -11467,6 +11495,7 @@ var PIXI = (function (exports) {
 	         * @protected
 	         * @event PIXI.BaseTexture#error
 	         * @param {PIXI.BaseTexture} baseTexture - Resource errored.
+	         * @param {ErrorEvent} event - Load error event.
 	         */
 
 	        /**
@@ -11475,14 +11504,6 @@ var PIXI = (function (exports) {
 	         * @protected
 	         * @event PIXI.BaseTexture#loaded
 	         * @param {PIXI.BaseTexture} baseTexture - Resource loaded.
-	         */
-
-	        /**
-	         * Fired when BaseTexture is destroyed.
-	         *
-	         * @protected
-	         * @event PIXI.BaseTexture#error
-	         * @param {PIXI.BaseTexture} baseTexture - Resource errored.
 	         */
 
 	        /**
@@ -11686,6 +11707,16 @@ var PIXI = (function (exports) {
 	            this.dirtyStyleId++;
 	            this.emit('update', this);
 	        }
+	    };
+
+	    /**
+	     * Handle errors with resources.
+	     * @private
+	     * @param {ErrorEvent} event - Error event emitted.
+	     */
+	    BaseTexture.prototype.onError = function onError (event)
+	    {
+	        this.emit('error', this, event);
 	    };
 
 	    /**
@@ -12384,6 +12415,11 @@ var PIXI = (function (exports) {
 	        BaseImageResource.crossOrigin(tempImage, this.svg, this._crossorigin);
 	        tempImage.src = this.svg;
 
+	        tempImage.onerror = function (event) {
+	            tempImage.onerror = null;
+	            this$1.onError.run(event);
+	        };
+
 	        tempImage.onload = function () {
 	            var svgWidth = tempImage.width;
 	            var svgHeight = tempImage.height;
@@ -12506,6 +12542,8 @@ var PIXI = (function (exports) {
 	        {
 	            var videoElement = document.createElement('video');
 
+	            // workaround for https://github.com/pixijs/pixi.js/issues/5996
+	            videoElement.setAttribute('preload', 'auto');
 	            videoElement.setAttribute('webkit-playsinline', '');
 	            videoElement.setAttribute('playsinline', '');
 
@@ -12575,6 +12613,7 @@ var PIXI = (function (exports) {
 
 	        // Bind for listeners
 	        this._onCanPlay = this._onCanPlay.bind(this);
+	        this._onError = this._onError.bind(this);
 
 	        if (options.autoLoad !== false)
 	        {
@@ -12641,6 +12680,7 @@ var PIXI = (function (exports) {
 	        {
 	            source.addEventListener('canplay', this._onCanPlay);
 	            source.addEventListener('canplaythrough', this._onCanPlay);
+	            source.addEventListener('error', this._onError, true);
 	        }
 	        else
 	        {
@@ -12661,6 +12701,17 @@ var PIXI = (function (exports) {
 	        });
 
 	        return this._load;
+	    };
+
+	    /**
+	     * Handle video error events.
+	     *
+	     * @private
+	     */
+	    VideoResource.prototype._onError = function _onError ()
+	    {
+	        this.source.removeEventListener('error', this._onError, true);
+	        this.onError.run(event);
 	    };
 
 	    /**
@@ -12768,6 +12819,7 @@ var PIXI = (function (exports) {
 
 	        if (this.source)
 	        {
+	            this.source.removeEventListener('error', this._onError, true);
 	            this.source.pause();
 	            this.source.src = '';
 	            this.source.load();
@@ -14837,7 +14889,7 @@ var PIXI = (function (exports) {
 	/**
 	*
 	* Adds an index buffer to the geometry
-	* The index buffer contains integers, three for each triangle in the geometry, which reference the various attribute buffers (position, colour, UV coordinates, other UV coordinates, normal, â€¦). There is only ONE index buffer.
+	* The index buffer contains integers, three for each triangle in the geometry, which reference the various attribute buffers (position, colour, UV coordinates, other UV coordinates, normal, …). There is only ONE index buffer.
 	*
 	* @param {PIXI.Buffer} [buffer] the buffer that holds the data of the index buffer. You can also provide an Array and a buffer will be created from it.
 	* @return {PIXI.Geometry} returns self, useful for chaining.
@@ -16550,12 +16602,12 @@ var PIXI = (function (exports) {
 
 	            gl.bindRenderbuffer(gl.RENDERBUFFER, fbo.stencil);
 
+	            gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_STENCIL, framebuffer.width, framebuffer.height);
 	            // TODO.. this is depth AND stencil?
 	            if (!framebuffer.depthTexture)
 	            { // you can't have both, so one should take priority if enabled
 	                gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_STENCIL_ATTACHMENT, gl.RENDERBUFFER, fbo.stencil);
 	            }
-	            gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_STENCIL, framebuffer.width, framebuffer.height);
 	            // fbo.enableStencil();
 	        }
 	    };
@@ -21269,8 +21321,14 @@ var PIXI = (function (exports) {
 	         */
 	        this.type = RENDERER_TYPE.WEBGL;
 
-	        // this will be set by the contextSystem (this.context)
+	        /**
+	         * WebGL context, set by the contextSystem (this.context)
+	         *
+	         * @readonly
+	         * @member {WebGLRenderingContext}
+	         */
 	        this.gl = null;
+
 	        this.CONTEXT_UID = 0;
 
 	        // TODO legacy!
@@ -22726,8 +22784,8 @@ var PIXI = (function (exports) {
 	var BatchRenderer = BatchPluginFactory.create();
 
 	/*!
-	 * @pixi/extract - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/extract - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/extract is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -23001,8 +23059,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/interaction - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/interaction - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/interaction is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -23215,11 +23273,32 @@ var PIXI = (function (exports) {
 	var InteractionEvent = function InteractionEvent()
 	{
 	    /**
-	     * Whether this event will continue propagating in the tree
+	     * Whether this event will continue propagating in the tree.
+	     *
+	     * Remaining events for the {@link stopsPropagatingAt} object
+	     * will still be dispatched.
 	     *
 	     * @member {boolean}
 	     */
 	    this.stopped = false;
+
+	    /**
+	     * At which object this event stops propagating.
+	     *
+	     * @private
+	     * @member {PIXI.DisplayObject}
+	     */
+	    this.stopsPropagatingAt = null;
+
+	    /**
+	     * Whether we already reached the element we want to
+	     * stop propagating at. This is important for delayed events,
+	     * where we start over deeper in the tree again.
+	     *
+	     * @private
+	     * @member {boolean}
+	     */
+	    this.stopPropagationHint = false;
 
 	    /**
 	     * The object which caused this event to be dispatched.
@@ -23230,7 +23309,7 @@ var PIXI = (function (exports) {
 	    this.target = null;
 
 	    /**
-	     * The object whose event listenerâ€™s callback is currently being invoked.
+	     * The object whose event listener’s callback is currently being invoked.
 	     *
 	     * @member {PIXI.DisplayObject}
 	     */
@@ -23258,6 +23337,8 @@ var PIXI = (function (exports) {
 	InteractionEvent.prototype.stopPropagation = function stopPropagation ()
 	{
 	    this.stopped = true;
+	    this.stopPropagationHint = true;
+	    this.stopsPropagatingAt = this.currentTarget;
 	};
 
 	/**
@@ -23266,6 +23347,8 @@ var PIXI = (function (exports) {
 	InteractionEvent.prototype.reset = function reset ()
 	{
 	    this.stopped = false;
+	    this.stopsPropagatingAt = null;
+	    this.stopPropagationHint = false;
 	    this.currentTarget = null;
 	    this.target = null;
 	};
@@ -23780,6 +23863,14 @@ var PIXI = (function (exports) {
 	         * @default 1
 	         */
 	        this.resolution = 1;
+
+	        /**
+	         * Delayed pointer events. Used to guarantee correct ordering of over/out events.
+	         *
+	         * @private
+	         * @member {Array}
+	         */
+	        this.delayedEvents = [];
 
 	        /**
 	         * Fired when a pointer device button (usually a mouse left-button) is pressed on the display
@@ -24466,7 +24557,9 @@ var PIXI = (function (exports) {
 	     */
 	    InteractionManager.prototype.dispatchEvent = function dispatchEvent (displayObject, eventString, eventData)
 	    {
-	        if (!eventData.stopped)
+	        // Even if the event was stopped, at least dispatch any remaining events
+	        // for the same display object.
+	        if (!eventData.stopPropagationHint || displayObject === eventData.stopsPropagatingAt)
 	        {
 	            eventData.currentTarget = displayObject;
 	            eventData.type = eventString;
@@ -24478,6 +24571,20 @@ var PIXI = (function (exports) {
 	                displayObject[eventString](eventData);
 	            }
 	        }
+	    };
+
+	    /**
+	     * Puts a event on a queue to be dispatched later. This is used to guarantee correct
+	     * ordering of over/out events.
+	     *
+	     * @param {PIXI.Container|PIXI.Sprite|PIXI.TilingSprite} displayObject - the display object in question
+	     * @param {string} eventString - the name of the event (e.g, mousedown)
+	     * @param {object} eventData - the event data object
+	     * @private
+	     */
+	    InteractionManager.prototype.delayDispatchEvent = function delayDispatchEvent (displayObject, eventString, eventData)
+	    {
+	        this.delayedEvents.push({ displayObject: displayObject, eventString: eventString, eventData: eventData });
 	    };
 
 	    /**
@@ -24523,9 +24630,11 @@ var PIXI = (function (exports) {
 	     *  interactionEvent, displayObject and hit will be passed to the function
 	     * @param {boolean} [hitTest] - this indicates if the objects inside should be hit test against the point
 	     * @param {boolean} [interactive] - Whether the displayObject is interactive
+	     * @param {boolean} [skipDelayed] - Whether to process delayed events before returning. This is
+	     *  used to avoid processing them too early during recursive calls.
 	     * @return {boolean} returns true if the displayObject hit the point
 	     */
-	    InteractionManager.prototype.processInteractive = function processInteractive (interactionEvent, displayObject, func, hitTest, interactive)
+	    InteractionManager.prototype.processInteractive = function processInteractive (interactionEvent, displayObject, func, hitTest, interactive, skipDelayed)
 	    {
 	        if (!displayObject || !displayObject.visible)
 	        {
@@ -24600,7 +24709,7 @@ var PIXI = (function (exports) {
 	                var child = children[i];
 
 	                // time to get recursive.. if this function will return if something is hit..
-	                var childHit = this.processInteractive(interactionEvent, child, func, hitTest, interactiveParent);
+	                var childHit = this.processInteractive(interactionEvent, child, func, hitTest, interactiveParent, true);
 
 	                if (childHit)
 	                {
@@ -24662,6 +24771,35 @@ var PIXI = (function (exports) {
 	                {
 	                    func(interactionEvent, displayObject, !!hit);
 	                }
+	            }
+	        }
+
+	        var delayedEvents = this.delayedEvents;
+
+	        if (delayedEvents.length && !skipDelayed)
+	        {
+	            // Reset the propagation hint, because we start deeper in the tree again.
+	            interactionEvent.stopPropagationHint = false;
+
+	            var delayedLen = delayedEvents.length;
+
+	            this.delayedEvents = [];
+
+	            for (var i$1 = 0; i$1 < delayedLen; i$1++)
+	            {
+	                var ref = delayedEvents[i$1];
+	                var displayObject$1 = ref.displayObject;
+	                var eventString = ref.eventString;
+	                var eventData = ref.eventData;
+
+	                // When we reach the object we wanted to stop propagating at,
+	                // set the propagation hint.
+	                if (eventData.stopsPropagatingAt === displayObject$1)
+	                {
+	                    eventData.stopPropagationHint = true;
+	                }
+
+	                this.dispatchEvent(displayObject$1, eventString, eventData);
 	            }
 	        }
 
@@ -25118,10 +25256,10 @@ var PIXI = (function (exports) {
 	            if (!trackingData.over)
 	            {
 	                trackingData.over = true;
-	                this.dispatchEvent(displayObject, 'pointerover', interactionEvent);
+	                this.delayDispatchEvent(displayObject, 'pointerover', interactionEvent);
 	                if (isMouse)
 	                {
-	                    this.dispatchEvent(displayObject, 'mouseover', interactionEvent);
+	                    this.delayDispatchEvent(displayObject, 'mouseover', interactionEvent);
 	                }
 	            }
 
@@ -25383,8 +25521,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/graphics - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/graphics - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/graphics is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -27654,8 +27792,8 @@ var PIXI = (function (exports) {
 
 	var temp = new Float32Array(3);
 
-	// a default shader used by graphics..
-	var defaultShader = null;
+	// a default shaders map used by graphics..
+	var DEFAULT_SHADERS = {};
 
 	/**
 	 * The Graphics class contains methods used to draw primitive shapes such as lines, circles and
@@ -28118,8 +28256,8 @@ var PIXI = (function (exports) {
 	     *
 	     * "borrowed" from https://code.google.com/p/fxcanvas/ - thanks google!
 	     *
-	     * @param {number} x1 - The x-coordinate of the beginning of the arc
-	     * @param {number} y1 - The y-coordinate of the beginning of the arc
+	     * @param {number} x1 - The x-coordinate of the first tangent point of the arc
+	     * @param {number} y1 - The y-coordinate of the first tangent point of the arc
 	     * @param {number} x2 - The x-coordinate of the end of the arc
 	     * @param {number} y2 - The y-coordinate of the end of the arc
 	     * @param {number} radius - The radius of the arc
@@ -28493,143 +28631,198 @@ var PIXI = (function (exports) {
 	        {
 	            if (this.batchDirty !== geometry.batchDirty)
 	            {
-	                this.batches = [];
-	                this.batchTint = -1;
-	                this._transformID = -1;
-	                this.batchDirty = geometry.batchDirty;
-
-	                this.vertexData = new Float32Array(geometry.points);
-
-	                var blendMode = this.blendMode;
-
-	                for (var i = 0; i < geometry.batches.length; i++)
-	                {
-	                    var gI = geometry.batches[i];
-
-	                    var color = gI.style.color;
-
-	                    //        + (alpha * 255 << 24);
-
-	                    var vertexData = new Float32Array(this.vertexData.buffer,
-	                        gI.attribStart * 4 * 2,
-	                        gI.attribSize * 2);
-
-	                    var uvs = new Float32Array(geometry.uvsFloat32.buffer,
-	                        gI.attribStart * 4 * 2,
-	                        gI.attribSize * 2);
-
-	                    var indices = new Uint16Array(geometry.indicesUint16.buffer,
-	                        gI.start * 2,
-	                        gI.size);
-
-	                    var batch = {
-	                        vertexData: vertexData,
-	                        blendMode: blendMode,
-	                        indices: indices,
-	                        uvs: uvs,
-	                        _batchRGB: hex2rgb(color),
-	                        _tintRGB: color,
-	                        _texture: gI.style.texture,
-	                        alpha: gI.style.alpha,
-	                        worldAlpha: 1 };
-
-	                    this.batches[i] = batch;
-	                }
+	                this._populateBatches();
 	            }
 
-	            if (this.batches.length)
-	            {
-	                renderer.batch.setObjectRenderer(renderer.plugins[this.pluginName]);
-
-	                this.calculateVertices();
-	                this.calculateTints();
-
-	                for (var i$1 = 0; i$1 < this.batches.length; i$1++)
-	                {
-	                    var batch$1 = this.batches[i$1];
-
-	                    batch$1.worldAlpha = this.worldAlpha * batch$1.alpha;
-
-	                    renderer.plugins[this.pluginName].render(batch$1);
-	                }
-	            }
+	            this._renderBatched(renderer);
 	        }
 	        else
 	        {
 	            // no batching...
 	            renderer.batch.flush();
 
-	            if (!this.shader)
-	            {
-	                // if there is no shader here, we can use the default shader.
-	                // and that only gets created if we actually need it..
-	                if (!defaultShader)
-	                {
-	                    var sampleValues = new Int32Array(16);
-
-	                    for (var i$2 = 0; i$2 < 16; i$2++)
-	                    {
-	                        sampleValues[i$2] = i$2;
-	                    }
-
-	                    var uniforms = {
-	                        tint: new Float32Array([1, 1, 1, 1]),
-	                        translationMatrix: new Matrix(),
-	                        default: UniformGroup.from({ uSamplers: sampleValues }, true),
-	                    };
-
-	                    // we can bbase default shader of the batch renderers program
-	                    var program =  renderer.plugins.batch._shader.program;
-
-	                    defaultShader = new Shader(program, uniforms);
-	                }
-
-	                this.shader = defaultShader;
-	            }
-
-	            var uniforms$1 = this.shader.uniforms;
-
-	            // lets set the transfomr
-	            uniforms$1.translationMatrix = this.transform.worldTransform;
-
-	            var tint = this.tint;
-	            var wa = this.worldAlpha;
-
-	            // and then lets set the tint..
-	            uniforms$1.tint[0] = (((tint >> 16) & 0xFF) / 255) * wa;
-	            uniforms$1.tint[1] = (((tint >> 8) & 0xFF) / 255) * wa;
-	            uniforms$1.tint[2] = ((tint & 0xFF) / 255) * wa;
-	            uniforms$1.tint[3] = wa;
-
-	            // the first draw call, we can set the uniforms of the shader directly here.
-
-	            // this means that we can tack advantage of the sync function of pixi!
-	            // bind and sync uniforms..
-	            // there is a way to optimise this..
-	            renderer.shader.bind(this.shader);
-
-	            // then render it
-	            renderer.geometry.bind(geometry, this.shader);
-
-	            // set state..
-	            renderer.state.set(this.state);
-
-	            // then render the rest of them...
-	            for (var i$3 = 0; i$3 < geometry.drawCalls.length; i$3++)
-	            {
-	                var drawCall = geometry.drawCalls[i$3];
-
-	                var groupTextureCount = drawCall.textureCount;
-
-	                for (var j = 0; j < groupTextureCount; j++)
-	                {
-	                    renderer.texture.bind(drawCall.textures[j], j);
-	                }
-
-	                // bind the geometry...
-	                renderer.geometry.draw(drawCall.type, drawCall.size, drawCall.start);
-	            }
+	            this._renderDirect(renderer);
 	        }
+	    };
+
+	    /**
+	     * Populating batches for rendering
+	     *
+	     * @protected
+	     */
+	    Graphics.prototype._populateBatches = function _populateBatches ()
+	    {
+	        var geometry = this.geometry;
+	        var blendMode = this.blendMode;
+
+	        this.batches = [];
+	        this.batchTint = -1;
+	        this._transformID = -1;
+	        this.batchDirty = geometry.batchDirty;
+
+	        this.vertexData = new Float32Array(geometry.points);
+
+	        for (var i = 0, l = geometry.batches.length; i < l; i++)
+	        {
+	            var gI = geometry.batches[i];
+	            var color = gI.style.color;
+	            var vertexData = new Float32Array(this.vertexData.buffer,
+	                gI.attribStart * 4 * 2,
+	                gI.attribSize * 2);
+
+	            var uvs = new Float32Array(geometry.uvsFloat32.buffer,
+	                gI.attribStart * 4 * 2,
+	                gI.attribSize * 2);
+
+	            var indices = new Uint16Array(geometry.indicesUint16.buffer,
+	                gI.start * 2,
+	                gI.size);
+
+	            var batch = {
+	                vertexData: vertexData,
+	                blendMode: blendMode,
+	                indices: indices,
+	                uvs: uvs,
+	                _batchRGB: hex2rgb(color),
+	                _tintRGB: color,
+	                _texture: gI.style.texture,
+	                alpha: gI.style.alpha,
+	                worldAlpha: 1 };
+
+	            this.batches[i] = batch;
+	        }
+	    };
+
+	    /**
+	     * Renders the batches using the BathedRenderer plugin
+	     *
+	     * @protected
+	     * @param {PIXI.Renderer} renderer - The renderer
+	     */
+	    Graphics.prototype._renderBatched = function _renderBatched (renderer)
+	    {
+	        if (!this.batches.length)
+	        {
+	            return;
+	        }
+
+	        renderer.batch.setObjectRenderer(renderer.plugins[this.pluginName]);
+
+	        this.calculateVertices();
+	        this.calculateTints();
+
+	        for (var i = 0, l = this.batches.length; i < l; i++)
+	        {
+	            var batch = this.batches[i];
+
+	            batch.worldAlpha = this.worldAlpha * batch.alpha;
+
+	            renderer.plugins[this.pluginName].render(batch);
+	        }
+	    };
+
+	    /**
+	     * Renders the graphics direct
+	     *
+	     * @protected
+	     * @param {PIXI.Renderer} renderer - The renderer
+	     */
+	    Graphics.prototype._renderDirect = function _renderDirect (renderer)
+	    {
+	        var shader = this._resolveDirectShader(renderer);
+
+	        var geometry = this.geometry;
+	        var tint = this.tint;
+	        var worldAlpha = this.worldAlpha;
+	        var uniforms = shader.uniforms;
+	        var drawCalls = geometry.drawCalls;
+
+	        // lets set the transfomr
+	        uniforms.translationMatrix = this.transform.worldTransform;
+
+	        // and then lets set the tint..
+	        uniforms.tint[0] = (((tint >> 16) & 0xFF) / 255) * worldAlpha;
+	        uniforms.tint[1] = (((tint >> 8) & 0xFF) / 255) * worldAlpha;
+	        uniforms.tint[2] = ((tint & 0xFF) / 255) * worldAlpha;
+	        uniforms.tint[3] = worldAlpha;
+
+	        // the first draw call, we can set the uniforms of the shader directly here.
+
+	        // this means that we can tack advantage of the sync function of pixi!
+	        // bind and sync uniforms..
+	        // there is a way to optimise this..
+	        renderer.shader.bind(shader);
+	        renderer.geometry.bind(geometry, shader);
+
+	        // set state..
+	        renderer.state.set(this.state);
+
+	        // then render the rest of them...
+	        for (var i = 0, l = drawCalls.length; i < l; i++)
+	        {
+	            this._renderDrawCallDirect(renderer, geometry.drawCalls[i]);
+	        }
+	    };
+
+	    /**
+	     * Renders specific DrawCall
+	     *
+	     * @param {PIXI.Renderer} renderer
+	     * @param {PIXI.BatchDrawCall} drawCall
+	     */
+	    Graphics.prototype._renderDrawCallDirect = function _renderDrawCallDirect (renderer, drawCall)
+	    {
+	        var groupTextureCount = drawCall.textureCount;
+
+	        for (var j = 0; j < groupTextureCount; j++)
+	        {
+	            renderer.texture.bind(drawCall.textures[j], j);
+	        }
+
+	        renderer.geometry.draw(drawCall.type, drawCall.size, drawCall.start);
+	    };
+
+	    /**
+	     * Resolves shader for direct rendering
+	     *
+	     * @protected
+	     * @param {PIXI.Renderer} renderer - The renderer
+	     */
+	    Graphics.prototype._resolveDirectShader = function _resolveDirectShader (renderer)
+	    {
+	        var shader = this.shader;
+
+	        var pluginName = this.pluginName;
+
+	        if (!shader)
+	        {
+	            // if there is no shader here, we can use the default shader.
+	            // and that only gets created if we actually need it..
+	            // but may be more than one plugins for graphics
+	            if (!DEFAULT_SHADERS[pluginName])
+	            {
+	                var sampleValues = new Int32Array(16);
+
+	                for (var i = 0; i < 16; i++)
+	                {
+	                    sampleValues[i] = i;
+	                }
+
+	                var uniforms = {
+	                    tint: new Float32Array([1, 1, 1, 1]),
+	                    translationMatrix: new Matrix(),
+	                    default: UniformGroup.from({ uSamplers: sampleValues }, true),
+	                };
+
+	                var program = renderer.plugins[pluginName]._shader.program;
+
+	                DEFAULT_SHADERS[pluginName] = new Shader(program, uniforms);
+	            }
+
+	            shader = DEFAULT_SHADERS[pluginName];
+	        }
+
+	        return shader;
 	    };
 
 	    /**
@@ -28838,8 +29031,8 @@ var PIXI = (function (exports) {
 	Graphics._TEMP_POINT = new Point();
 
 	/*!
-	 * @pixi/sprite - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/sprite - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/sprite is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -28965,6 +29158,13 @@ var PIXI = (function (exports) {
 	         */
 	        this._cachedTint = 0xFFFFFF;
 
+	        /**
+	         * this is used to store the uvs data of the sprite, assigned at the same time
+	         * as the vertexData in calculateVertices()
+	         *
+	         * @private
+	         * @member {Float32Array}
+	         */
 	        this.uvs = null;
 
 	        // call texture setter
@@ -29039,7 +29239,6 @@ var PIXI = (function (exports) {
 	        this._textureTrimmedID = -1;
 	        this._cachedTint = 0xFFFFFF;
 
-	        this.uvs = this._texture._uvs.uvsFloat32;
 	        // so if _width is 0 then width was not set..
 	        if (this._width)
 	        {
@@ -29073,6 +29272,12 @@ var PIXI = (function (exports) {
 	        if (this._transformID === this.transform._worldID && this._textureID === texture._updateID)
 	        {
 	            return;
+	        }
+
+	        // update texture UV here, because base texture can be changed without calling `_onTextureUpdate`
+	        if (this._textureID !== texture._updateID)
+	        {
+	            this.uvs = this._texture._uvs.uvsFloat32;
 	        }
 
 	        this._transformID = this.transform._worldID;
@@ -29496,8 +29701,8 @@ var PIXI = (function (exports) {
 	}(Container));
 
 	/*!
-	 * @pixi/text - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/text - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/text is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -31029,9 +31234,9 @@ var PIXI = (function (exports) {
 	 * @memberof PIXI.TextMetrics
 	 * @name METRICS_STRING
 	 * @type {string}
-	 * @default |Ã‰qÃ…
+	 * @default |ÉqÅ
 	 */
-	TextMetrics.METRICS_STRING = '|Ã‰qÃ…';
+	TextMetrics.METRICS_STRING = '|ÉqÅ';
 
 	/**
 	 * Baseline symbol for calculate font metrics.
@@ -31763,8 +31968,8 @@ var PIXI = (function (exports) {
 	}(Sprite));
 
 	/*!
-	 * @pixi/prepare - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/prepare - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/prepare is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -32454,8 +32659,8 @@ var PIXI = (function (exports) {
 	});
 
 	/*!
-	 * @pixi/app - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/app - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/app is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -32558,7 +32763,7 @@ var PIXI = (function (exports) {
 	 * @param {boolean} [stageOptions.baseTexture=false] - Only used for child Sprites if stageOptions.children is set
 	 *  to true. Should it destroy the base texture of the child sprite
 	 */
-	Application.prototype.destroy = function destroy (removeView)
+	Application.prototype.destroy = function destroy (removeView, stageOptions)
 	{
 	        var this$1 = this;
 
@@ -32571,7 +32776,7 @@ var PIXI = (function (exports) {
 	        plugin.destroy.call(this$1);
 	    });
 
-	    this.stage.destroy();
+	    this.stage.destroy(stageOptions);
 	    this.stage = null;
 
 	    this.renderer.destroy(removeView);
@@ -35217,8 +35422,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/loaders - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/loaders - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/loaders is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -35518,8 +35723,8 @@ var PIXI = (function (exports) {
 	var LoaderResource = Resource$1;
 
 	/*!
-	 * @pixi/particles - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/particles - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/particles is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -36486,8 +36691,8 @@ var PIXI = (function (exports) {
 	}(ObjectRenderer));
 
 	/*!
-	 * @pixi/spritesheet - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/spritesheet - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/spritesheet is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -36894,8 +37099,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/sprite-tiling - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/sprite-tiling - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/sprite-tiling is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -37390,8 +37595,8 @@ var PIXI = (function (exports) {
 	}(ObjectRenderer));
 
 	/*!
-	 * @pixi/text-bitmap - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/text-bitmap - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/text-bitmap is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38215,8 +38420,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/filter-alpha - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-alpha - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-alpha is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38279,8 +38484,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-blur - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-blur - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-blur is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38704,8 +38909,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-color-matrix - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-color-matrix - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-color-matrix is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -38723,7 +38928,7 @@ var PIXI = (function (exports) {
 	 *  container.filters = [colorMatrix];
 	 *  colorMatrix.contrast(2);
 	 * ```
-	 * @author ClÃ©ment Chenebault <clement@goodboydigital.com>
+	 * @author Clément Chenebault <clement@goodboydigital.com>
 	 * @class
 	 * @extends PIXI.Filter
 	 * @memberof PIXI.filters
@@ -39302,8 +39507,8 @@ var PIXI = (function (exports) {
 	ColorMatrixFilter.prototype.grayscale = ColorMatrixFilter.prototype.greyscale;
 
 	/*!
-	 * @pixi/filter-displacement - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-displacement - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-displacement is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39419,8 +39624,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-fxaa - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-fxaa - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-fxaa is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39456,8 +39661,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/filter-noise - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/filter-noise - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/filter-noise is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39535,8 +39740,8 @@ var PIXI = (function (exports) {
 	}(Filter));
 
 	/*!
-	 * @pixi/mixin-cache-as-bitmap - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/mixin-cache-as-bitmap - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/mixin-cache-as-bitmap is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39960,8 +40165,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/mixin-get-child-by-name - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/mixin-get-child-by-name - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/mixin-get-child-by-name is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -39997,8 +40202,8 @@ var PIXI = (function (exports) {
 	};
 
 	/*!
-	 * @pixi/mixin-get-global-position - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/mixin-get-global-position - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/mixin-get-global-position is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -41192,8 +41397,8 @@ var PIXI = (function (exports) {
 	}
 
 	/*!
-	 * @pixi/mesh - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/mesh - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/mesh is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -41970,8 +42175,8 @@ var PIXI = (function (exports) {
 	}(Geometry));
 
 	/*!
-	 * @pixi/mesh-extras - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/mesh-extras - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/mesh-extras is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -42248,7 +42453,7 @@ var PIXI = (function (exports) {
 	 * for (let i = 0; i < 20; i++) {
 	 *     points.push(new PIXI.Point(i * 50, 0));
 	 * };
-	 * let rope = new PIXI.Rope(PIXI.Texture.from("snake.png"), points);
+	 * let rope = new PIXI.SimpleRope(PIXI.Texture.from("snake.png"), points);
 	 *  ```
 	 *
 	 * @class
@@ -42725,8 +42930,8 @@ var PIXI = (function (exports) {
 	}(SimplePlane));
 
 	/*!
-	 * @pixi/sprite-animated - v5.1.1
-	 * Compiled Fri, 02 Aug 2019 23:24:57 UTC
+	 * @pixi/sprite-animated - v5.1.3
+	 * Compiled Mon, 09 Sep 2019 04:51:53 UTC
 	 *
 	 * @pixi/sprite-animated is licensed under the MIT License.
 	 * http://www.opensource.org/licenses/mit-license
@@ -43031,7 +43236,7 @@ var PIXI = (function (exports) {
 
 	        if (this.updateAnchor)
 	        {
-	            this._anchor.copy(this._texture.defaultAnchor);
+	            this._anchor.copyFrom(this._texture.defaultAnchor);
 	        }
 
 	        if (this.onFrameChange)
@@ -43190,7 +43395,7 @@ var PIXI = (function (exports) {
 	 * @name VERSION
 	 * @type {string}
 	 */
-	var VERSION$1 = '5.1.1';
+	var VERSION$1 = '5.1.3';
 
 	/**
 	 * @namespace PIXI

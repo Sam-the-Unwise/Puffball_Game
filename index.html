@@ -1,6 +1,7 @@
 <html>
     <head>
         <title> PUFF PUFF GO </title>
+        <link rel="shortcut icon" href="puff-puff-go-thumbnail.ico" type="image/x-icon"/>
     </head>
 
     <body>
@@ -12,26 +13,28 @@
             Use the following keys to play the game:
             <br> &ensp; 'a': left
             <br> &ensp; 'd': right 
-            <br> &ensp; 'space': fire laser 
+            <br> &ensp; 'w': fire laser 
         </p>
 
         <h1> Comments </h1>
 
-        <script>
+        <div id="disqus_thread"></div>
 
-            (function() {
+            <script>
 
-                var d = document, s = d.createElement('script');
+                (function() {
 
-                s.src = 'http://nau-cs413.disqus.com/embed.js';
+                    var d = document, s = d.createElement('script');
 
-                s.setAttribute('data-timestamp', +new Date());
+                    s.src = 'https://nau-cs413.disqus.com/embed.js';
 
-                (d.head || d.body).appendChild(s);
+                    s.setAttribute('data-timestamp', +new Date());
 
-            })(); 
+                    (d.head || d.body).appendChild(s);
 
-        </script>
+                })(); 
+
+            </script>
 
         <script src = "tweenjs.min.js/tweenjs.min.js"></script>
         <script src = "Pixi/pixi.js"></script>
